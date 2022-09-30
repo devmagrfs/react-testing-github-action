@@ -11,11 +11,13 @@ function App() {
         <div>
           <button
             data-testid='minus-button'
+            onClick={() => setCounter(prev => prev - 1)}
           >
             -
           </button>
           <button
             data-testid='plus-button'
+            onClick={() => setCounter(prev => prev + 1)}
           >
             +
           </button>
